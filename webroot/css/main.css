@@ -1,0 +1,42 @@
+html, body, .container-fluid, .row-main {
+    height: 100%;
+}
+
+.col-leftbar {
+    height: 100%;
+    background-color: #99a3b5;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+.nav-grey li>p {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    width: 100%;
+    color: #fff;
+    border-left: 2px solid #99a3b5;
+    cursor: pointer;
+}
+.nav-grey li:hover>p {
+    background-color: #7e8694;
+    border-left: 2px solid #7e8694;
+}
+.nav-grey li.active>p {
+    background-color: #7e8694;
+    border-left: 2px solid #c77105;
+}
+
+.wz {
+    display: none;
+    position: relative;
+    height: 100%;
+    width:100%;
+}
+.wz .page-header {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+.wz .btn-block {
+    margin-bottom: 20px;
+}
