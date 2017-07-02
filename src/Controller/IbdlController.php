@@ -12,6 +12,7 @@ use Cake\Core\Configure;
 use Cake\Network\Exception\ForbiddenException;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
+use PmMigration\PmMigration;
 
 /**
  * Description of HomeController
@@ -23,5 +24,11 @@ class IbdlController extends AppController
     public function index()
     {
         $this->viewBuilder()->setLayout('home');
+    }
+    
+    public function datasource() 
+    {
+        $mysql = new PmMigration();
+        $mysql->table('files')->create();
     }
 }

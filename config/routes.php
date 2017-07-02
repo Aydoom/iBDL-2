@@ -52,7 +52,7 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->connect('/', ['controller' => 'Home', 'action' => 'index']);
     
     $routes->connect('/ibdl', ['controller' => 'Ibdl', 'action' => 'index']);
-    $routes->connect('/ibdl/*', ['controller' => 'Ibdl']);
+    $routes->connect('/ibdl/:action/*', ['controller' => 'Ibdl']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
